@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热门影视剧简介</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🎬 影视推荐</h1>
+            <nav class="nav-links">
+                <a href="#home" class="active">首页</a>
+                <a href="#movies">电影</a>
+                <a href="#tv">剧集</a>
+                <a href="#about">关于</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索影视剧...">
+                <button onclick="searchFilms()">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner区域 -->
+    <section class="banner" id="home">
+        <div class="banner-content">
+            <h2>2026 年度热门影视剧推荐</h2>
+            <p>精选多部高分佳作，带你领略光影世界的无限魅力</p>
+        </div>
+    </section>
+
+    <!-- 分类筛选 -->
+    <section class="filter-bar">
+        <div class="filter-container">
+            <span>类型筛选：</span>
+            <button class="filter-btn active" data-type="all">全部</button>
+            <button class="filter-btn" data-type="科幻">科幻</button>
+            <button class="filter-btn" data-type="剧情">剧情</button>
+            <button class="filter-btn" data-type="悬疑">悬疑</button>
+            <button class="filter-btn" data-type="喜剧">喜剧</button>
+            <button class="filter-btn" data-type="动作">动作</button>
+            <button class="filter-btn" data-type="爱情">爱情</button>
+            <button class="filter-btn" data-type="古装">古装</button>
+        </div>
+    </section>
+
+    <!-- 影视卡片列表 -->
+    <main class="film-grid" id="filmGrid">
+        <!-- JS动态渲染 -->
+    </main>
+
+    <!-- 详情模态框 -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <span class="close-btn" onclick="closeModal()">✕</span>
+            <div class="modal-content" id="modalContent">
+                <!-- JS动态填充 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer" id="about">
+        <p>🎬 热门影视剧简介 &copy; 2026 | 本页面仅用于学习展示</p>
+        <p class="footer-links">
+            <a href="#home">回到顶部</a> | 
+            <a href="https://movie.douban.com" target="_blank" rel="noopener">豆瓣电影</a> | 
+            <a href="https://www.imdb.com" target="_blank" rel="noopener">IMDb</a>
+        </p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
