@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级水平导航菜单</title>
+    <style>
+        /* 二级菜单样式 我加的不好 将就看 */
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #3366CC;
+        }
+
+        /* 并集选择器 给链接和logo一起设置 */
+        a, .logo {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: "宋体";
+            font-size: 16px;
+            padding: 12px 20px;
+            display: inline-block;
+        }
+
+        /* li用inline-block实现水平排列 position:relative用来给下拉菜单定位 */
+        li {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* 后代选择器 二级菜单的ul */
+        li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 160px;
+            background-color: #3366CC;
+            display: none;
+        }
+
+        /* 后代选择器 二级菜单里的li变回竖着排 */
+        li ul li {
+            display: block;
+        }
+
+        /* hover改变一级菜单背景 */
+        li:hover {
+            background-color: #FF6600;
+        }
+
+        /* hover显示二级菜单 */
+        li:hover ul {
+            display: block;
+        }
+
+        /* 类选择器 给logo单独弄个颜色 */
+        .logo {
+            font-weight: bold;
+            background-color: #224488;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="logo">欢迎访问湖南文理学院</li>
+    </ul>
+    <ul>         
+        <li><a href="#">首页</a></li>
+        <li><a href="#">教学院(部)</a>
+            <ul>
+                <li><a href="#">计算机与电气工程学院</a></li>
+                <li><a href="#">芙蓉学院</a></li>
+            </ul>
+        </li>
+        <li><a href="#">党群机构</a></li>        
+        <li><a href="#">行政教辅机构</a></li>
+        <li><a href="#">教学科研</a></li>
+        <li><a href="#">招生就业</a></li>
+        <li><a href="#">国际交流</a></li>
+        <li><a href="#">数字图书馆</a></li>
+    </ul>    
+</body>
+</html>

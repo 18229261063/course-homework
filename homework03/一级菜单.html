@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一级水平导航菜单</title>
+    <style>
+        /* 老师给的一级菜单 下面是我在<head>里加的css样式 没有改html结构 */
+        
+        table {
+            background-color: #3366CC;
+            border-collapse: collapse;
+            margin-top: 60px;
+        }
+
+        /* 并集选择器 给td和a都加边框 */
+        td, a {
+            border: 1px solid #FFFFFF;
+        }
+
+        td {
+            padding: 12px 22px;
+        }
+
+        /* 后代选择器 设置链接样子 */
+        td a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: "微软雅黑", "宋体";
+            font-size: 16px;
+            display: inline-block;
+            padding: 4px 8px;
+        }
+
+        /* hover伪类 鼠标移上去变色 */
+        td a:hover {
+            background-color: #FF6600;
+            color: #FFFF00;
+        }
+
+    </style>
+</head>
+<body>
+    <table align="center">
+        <tr>           
+            <td><a href="#">首页</a></td>
+            <td><a href="#">教学院(部)</a></td>
+            <td><a href="#">党群机构</a></td>
+            <td><a href="#">行政教辅机构</a></td>
+            <td><a href="#">教学科研</a></td>
+            <td><a href="#">招生就业</a></td>
+            <td><a href="#">国际交流</a></td>
+            <td><a href="#">数字图书馆</a></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
